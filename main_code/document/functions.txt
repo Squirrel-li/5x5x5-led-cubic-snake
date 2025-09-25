@@ -1,0 +1,30 @@
+void array_reset();//重設led陣列內容
+void pinmod_set();//設定接腳輸出模式
+void lcd_set();//設定LCD
+void timer_set();//設定timer
+void snake_reset();//貪食蛇重製座標
+
+void create_apple();//生成蘋果
+
+void print_led_dot(byte x, byte y, byte z, byte output_data);//將要顯示資料寫入矩陣中
+void joystick_direction();//判定搖桿方向
+
+void snake_direction();//判定貪食蛇移動方向
+void snake_move();//貪食蛇移動
+void snake_hit();//蛇是否有碰撞
+void reflash_score();//刷新分數
+void count_down();//倒數321
+
+void scan_clear();//LED顯示內容
+void led_reflash();//刷新LED顯示內容
+
+byte count_digit();//取得數值位數
+
+byte EEPROM_read();//取得eeprom資料
+void EEPROM_write();//箱資料寫入eeprom
+
+void lcd_display();//lcd顯示
+
+void debug_input_led_array();//輸入陣列資料
+void debug_print_led_array();//顯示顯示陣列內容
+ISR(TIMER3_OVF_vect)//timer
